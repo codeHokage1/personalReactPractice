@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.project{
+  background-color: rgb(65, 61, 61);
+  color: white;
+  width: 740px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  background-color: #F55A5A;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.globe{
+  width: 24px;
+  height: 24px;
+}
+.navbar h1{
+  color: white;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 50px;
+}
+.card{
+  display: flex;
+  gap: 30px;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 10px;
+}
+.card > img{
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+.card-details{
+  padding: 10px;
+}
+.location{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.location img{
+  width: 10px;
+  height: 10px;
+}
+.location span{
+  font-size: 10pt;
+}
+.state{
+  letter-spacing: 0.17em;
+}
+.location a{
+  color: grey;
+}
+.card h3, .card p{
+  margin: 10px 0;
+}
+.card h3{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.card p{
+  font-size: 12px;
+  line-height: 150%;
+}

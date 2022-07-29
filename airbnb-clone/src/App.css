@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+.nav-bar{
+  height: 70px;
+  display: flex;
+  padding: 20px 60px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.hero{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-image{
+  max-width: 400px;
+  height: 232px;
+  align-self: center;
+}
+.hero-header{
+  font-size: 36px;
+  line-height: 110%;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 16px;
+}
+.hero-content{
+  margin-top: 0;
+}
+
+
+
+.cards-container{
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+}
+.service-badge{
+  border-radius: 5px;
+  background-color: beige;
+  padding: 3px 5px;
+  top: 6px;
+  left: 6px;
+  position: absolute;
+  font-weight: bold;
+}
+.card{
+  width: 176px;
+  position: relative;
+}
+.card-details{
+  font-weight: 300;
+}
+.card-image{
+  width: 176px;
+  height: 235px;
+}
+.rating{
+  display: flex;
+  gap: 4px;
+}
+.star-logo{
+  width: 14px;
+  height: 14px;
+}
+.rating p{
+  font-size: 12px;
+  line-height: 13.2px;
+  margin: 0;
+}
+.lesson-title{
+  font-size: 12px;
+  margin: 0;
+  line-height: 110%;
+  margin-top: 5px;
+}
+.price{
+  font-size: 12px;
+  line-height: 13.px;
+  margin-top: 5px;
+}
