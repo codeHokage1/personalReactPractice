@@ -1,0 +1,39 @@
+.game{
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 14pt;
+  font-family: monospace;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto; 
+}
+.response{
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 50px;
+  max-width: 200px;
+  margin: 20px auto;
+}
+input[type="number"]{
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+input[type="submit"]{
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 12pt;
+  font-family: monospace;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  box-shadow: 2px 2px 3px grey;
+}
