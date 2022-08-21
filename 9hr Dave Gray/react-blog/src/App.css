@@ -1,0 +1,115 @@
+.header{
+  display: flex;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 18pt;
+}
+.nav{
+  background-color: rgba(204, 127, 26, 0.877);
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+}
+.nav ul{
+  list-style-type: none;
+  display: flex;
+}
+.nav ul  li{
+  margin: 0 10px;
+}
+.nav form{
+  margin-right: auto;
+}
+.link{
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 14pt;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.search-box{
+  height: 20px;
+  padding: 5px;
+  font-size: 12pt;
+  border-radius: 5px;
+  border: none;
+}
+.footer{
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 12pt;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+
+
+.article{
+  border-radius: 5px;
+  background-color: rgb(221, 213, 213);
+  font-family: monospace;
+  padding: 10px 30px;
+  margin: 20px 50px;
+}
+.article h5, .article p{
+  font-size: 12pt;
+}
+.post-link{
+  color: black;
+}
+.post-link:hover{
+  color: rgba(204, 127, 26, 0.877);
+}
+.single-post{
+  padding: 50px;
+}
+.single-post button{
+  outline: none;
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  font-family: monospace;
+  font-size: 12pt;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.add-post{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.add-post input{
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  padding: 10px;
+
+}
+.add-post input[type='submit']{
+  background-color: black;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+}
+.add-post textarea{
+  width: 80%;
+  height: 70px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 20px;
+}

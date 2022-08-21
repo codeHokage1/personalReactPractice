@@ -1,8 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
-import { FaTrashAlt } from 'react-icons/fa'
+import { useState, useRef} from 'react'
+import { FaTrashAlt, FaPlus } from 'react-icons/fa'
 
-const Counter = () => {
+export const Counter = () => {
     const [count, setCount] = useState(0);
 
   return (
@@ -35,31 +35,12 @@ export const Greet = () => {
 // ################################
 
 
-export const ToDo = (props) => {
+export const ToDo = ({heading, todos, handleCheck, handleDelete}) => {
 
-  const [todos, setTodos] = useState([
-    { id: 1, value: "Go to work", isDone: true },
-    { id: 2, value: "Work at work", isDone: true },
-    { id: 3, value: "Close from work", isDone: false },
-    { id: 4, value: "Eat and Sleep after work", isDone: false }
-  ]);
-
-  const handleCheck = (id) => {
-    console.log("This task has an id of: ", id);
-    const newList  = todos.map(todo => todo.id === id ? { ...todo, isDone: !todo.isDone} : todo)
-    setTodos(newList);
-    localStorage.setItem('Current Tasks', JSON.stringify(newList));
-  }
-
-  const handleDelete = (id) => {
-    const newList2 = todos.filter(todo => todo.id !== id)
-    setTodos(newList2);
-    localStorage.setItem('Current Tasks', JSON.stringify(newList2));
-  }
+  
 
   return (
     <div>
-      <h1>{props.heading}</h1>
       {
       todos.length ? (
         <div>
@@ -87,4 +68,24 @@ ToDo.defaultProps = {
   heading: "Hello World: The default Prop"
 }
 
-export default Counter
+// ################################
+
+export const AddItem = ({ newTodo, setNewTodo, handleAdd }) => {
+  const inputRef = useRef(); 
+  return (
+    <form onSubmit={handleAdd}>
+      <input type="text" value={newTodo} onChange={(e) => setNewTodo(e.target.value)} ref={inputRef} required />
+      <button onClick={() => inputRef.current.focus()}><FaPlus /></button>
+    </form>
+  )
+}
+
+// ################################
+
+export const SearchTodo = ({search, setSearch}) => {
+  return (
+    <form onSubmit={(e) => e.preventDefault()}>
+      <input type="text" value={search} placeholder='Search for a task...' onChange={e => setSearch(e.target.value)} />
+    </form>
+  )
+}

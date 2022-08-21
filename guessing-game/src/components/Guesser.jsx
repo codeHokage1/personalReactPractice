@@ -13,8 +13,6 @@ const Guesser = () => {
     const [randomNumber, setRandomNumber] = useState(randInt(lower, upper));
     const [giveResponse, setGiveResponse] = useState('');
 
-    console.log(randomNumber);
-
     
 
     const handleGuess = (e) => {
@@ -33,18 +31,14 @@ const Guesser = () => {
                 break;
         }
         setGiveResponse(response);
-        console.log(giveResponse);
     }
 
 
     const handleReset = (e) => {
         e.preventDefault();
-        console.log('The new lower is', lower)
-        console.log('The new Upper is', upper)
 
         const newRan = randInt(lower, upper);
         setRandomNumber(newRan);
-        console.log('The new random number is', randomNumber);
         setGiveResponse('The Game has been reset. Try now!')
         
     }
@@ -81,4 +75,4 @@ const Guesser = () => {
   )
 }
 
-export default Guesser
+export default Guesser;

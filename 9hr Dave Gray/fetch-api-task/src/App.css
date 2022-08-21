@@ -1,0 +1,17 @@
+body{
+  position: relative;
+}
+form{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+}
+button{
+  padding: 10px;
+  font-size: 14pt;
+  cursor: pointer;
+}
+.selected{
+  background-color: black;
+  color: white;
+}

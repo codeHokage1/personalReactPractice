@@ -1,0 +1,24 @@
+{
+  "todo": [
+    {
+      "isDone": true,
+      "value": "Close from work",
+      "id": 1
+    },
+    {
+      "isDone": true,
+      "value": "Close from work",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "value": "Close from work",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "value": "Eat and Sleep after work",
+      "isDone": false
+    }
+  ]
+}
